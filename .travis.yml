@@ -1,6 +1,6 @@
 language: java
 jdk:
   - oraclejdk8
-script: mvn test
+script: mvn test --settings ".travis.settings.xml"
 after_success:
-  - mvn clean test jacoco:report coveralls:report --settings ".travis.settings.xml"
+  - mvn jacoco:report coveralls:report --settings ".travis.settings.xml"
