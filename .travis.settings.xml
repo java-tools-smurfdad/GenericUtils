@@ -1,0 +1,35 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<localRepository />
+	<interactiveMode />
+	<usePluginRegistry />
+	<offline />
+	<pluginGroups />
+	<servers/>
+	<mirrors/>
+  <proxies/>    
+	<profiles>
+		<profile>
+			<id>travis</id>
+			<repositories>
+				<repository>
+					<id>smurfdad</id>
+					<name>Repositorio Personal Smurf Dad</name>          
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+						<updatePolicy>always</updatePolicy>
+					</snapshots>
+					<url>http://maven.smurdad.es</url>
+				</repository>        
+			</repositories>
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<activeProfile>travis</activeProfile>
+	</activeProfiles>
+</settings>
