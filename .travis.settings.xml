@@ -24,7 +24,7 @@
 						<enabled>true</enabled>
 						<updatePolicy>always</updatePolicy>
 					</snapshots>
-					<url>http://maven.smurdad.es</url>
+					<url>http://maven.smurfdad.es</url>
 				</repository>        
 			</repositories>
 		</profile>
