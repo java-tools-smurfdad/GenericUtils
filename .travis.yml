@@ -4,9 +4,5 @@ after_success:
   - mvn clean test jacoco:report coveralls:report
 jdk:
   - oraclejdk8
-deploy:
-  provider: script
-  script: "cp .travis.settings.xml $HOME/.m2/settings.xml && mvn deploy"
-  skip_cleanup: true
-  on:
-    tags: true  
+before_install:  
+  - cp .travis.settings.xml $HOME/.m2/settings.xml && mvn deploy
