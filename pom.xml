@@ -43,4 +43,10 @@
 			</plugin>
 		</plugins>
 	</build>
+	<repositories>
+		<repository>
+			<id>smurfdad</id>
+			<url>http://maven.smurfdad.es</url>
+		</repository>
+	</repositories>
 </project>
