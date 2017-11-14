@@ -16,5 +16,4 @@ public class GenericBuilderTest implements GenericBuilder<ExampleBean> {
         assertNotNull(resultado);
         assertTrue(resultado instanceof ExampleBean);
     }
-
 }
