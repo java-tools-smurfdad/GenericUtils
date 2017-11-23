@@ -11,12 +11,19 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<dependencies>
-
 		<dependency>
 			<groupId>es.smurfdad.fwk.maven.starter</groupId>
 			<artifactId>test</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.pitest</groupId>
+				<artifactId>pitest-maven</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
